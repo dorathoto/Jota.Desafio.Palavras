@@ -1,34 +1,21 @@
-﻿namespace Jota.Desafio.Palavras
+﻿namespace Jota.Desafio.Palavras;
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Digite uma série de palavras separadas por espaço:");
-            string frase = Console.ReadLine();
+        Console.WriteLine("Digite uma série de palavras separadas por espaço:");
+        string input = Console.ReadLine();
 
-            string[] palavras = frase.Split(' ');
+        string[] palavras = input.Split(' ');
 
-            string palavraMaiorPontuacao = "";
-            int maiorPontuacao = 0;
+        var resultado = palavras
+            .Select(palavra => new { Palavra = palavra, Pontuacao = palavra.Sum(letra => letra - 'a' + 1) })
+            .OrderByDescending(item => item.Pontuacao)
+            .ThenBy(item => palavras.ToList().IndexOf(item.Palavra)) // Desempate pela ordem de entrada
+            .First();
 
-            foreach (string palavra in palavras)
-            {
-                int pontuacaoAtual = 0;
-                foreach (char letra in palavra)
-                {
-                    pontuacaoAtual += letra - 'a' + 1;
-                }
-
-                if (pontuacaoAtual > maiorPontuacao)
-                {
-                    maiorPontuacao = pontuacaoAtual;
-                    palavraMaiorPontuacao = palavra;
-                }
-            }
-
-            Console.WriteLine("Palavra de maior pontuação: " + palavraMaiorPontuacao);
-            Console.WriteLine("Pontuação: " + maiorPontuacao);
-        }
+        Console.WriteLine("Palavra de maior pontuação: " + resultado.Palavra);
+        Console.WriteLine("Pontuação: " + resultado.Pontuacao);
     }
 }
