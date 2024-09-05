@@ -48,6 +48,7 @@ Depois utilizo outra lista para verificar se ele chegou ao resultado, se tirar 1
 
 Treinamento:
 "O Rato roeu a roupa do rei de roma"
+
 roupa: 71 pontos
 roeu: 59 pontos
 rato: 54 pontos
@@ -64,4 +65,5 @@ Lá fica um pouco mais fácil de implementar uma rede neural com tensorflow e ke
 Consegui pontuação usando o mesmo dataset de 22,99998 claro que estava com o overfitting (idade) ao remover ainda sim consigo fácil 27
 Porém o dataset se mostra muito pequeno já que no treinamento tenho um loss de 0.0001 e no teste tenho loss de 4, depois seria gerar um csv com dados de treinamento e claro utilizar no C# para comparação
 Rede neural em python Vs Regressão Linear em C#
+
 OBS²: Não consegui ainda implementar o FastTree no C#
