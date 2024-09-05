@@ -8,9 +8,9 @@ internal class Program
 {
     public class DataSet
     {
-        [VectorType(5)] // Fixar o vetor para 5 letras (ou outro valor que você escolha)
+        [VectorType(5)] // Fixar o vetor para 5 letras
         public float[] Letras { get; set; }
-        public float Pontuacao { get; set; } // Não fornecemos isso diretamente no teste
+        public float Pontuacao { get; set; }
     }
 
     public class WordScorePrediction
@@ -36,11 +36,16 @@ internal class Program
             new DataSet { Letras = new float[] { 18, 5, 9, 0, 0 }, Pontuacao = 32f },  // "rei"
         };
 
+
+        //versão 2 Dataset bemm maior
+
+
         var trainData = mlContext.Data.LoadFromEnumerable(data);
         //################# executei cada modelo 3 vezes e mostro a pontuação, confirmando que o Sdca é o melhor, FastTree deverá ser melhor, mas não sei como implementar ainda
 
         // Sdca - regressão linear e não rede neural - teste 01 - pontuação (1000 interações: -28,752869; -19,983501; 13,248304) (100 interações: 11,020389; 
         var pipeline = mlContext.Transforms.Concatenate("Features", "Letras")
+            //.Append(mlContext.Transforms.NormalizeMinMax("Features")) //tentativa de normalizar os dados
             .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Pontuacao"
                         , maximumNumberOfIterations: 100));//maximumNumberOfIterations tipo epocas
 
