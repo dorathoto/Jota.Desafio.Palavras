@@ -67,6 +67,7 @@ Consegui pontuação usando o mesmo dataset de 22,99998 claro que estava com o o
 Porém o dataset se mostra muito pequeno já que no treinamento tenho um loss de 0.0001 e no teste tenho loss de 4, depois seria correto gerar um *.csv* com dados de treinamento e claro utilizar no C# para comparação
 
 > Rede neural em python Vs Regressão Linear em C#
+> 
 > Quase como comparar maçã com notebook
 
 **OBS²:** Não consegui ainda implementar o FastTree no C#
