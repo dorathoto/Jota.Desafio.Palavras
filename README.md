@@ -49,15 +49,15 @@ Depois utilizo outra lista para verificar se ele chegou ao resultado, se tirar 1
 Treinamento:
 "O Rato roeu a roupa do rei de roma"
 
-roupa: 71 pontos
-roeu: 59 pontos
-rato: 54 pontos
-roma: 47 pontos
-rei: 32 pontos
-do: 19 pontos
-o: 15 pontos
-de: 9 pontos
-a: 1 pontos
+  roupa: 71 pontos
+  roeu: 59 pontos
+  rato: 54 pontos
+  roma: 47 pontos
+  rei: 32 pontos
+  do: 19 pontos
+  o: 15 pontos
+  de: 9 pontos
+  a: 1 pontos
 
 
 OBS: Após algumas tentativas apelei e fui pro Python
