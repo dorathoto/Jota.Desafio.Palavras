@@ -4,7 +4,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Digite uma série de palavras separadas por espaço:");
+        Console.WriteLine("Digite uma frase, irei calcular a palavra de maior ranking:");
         string input = Console.ReadLine();
 
         string[] palavras = input.Split(' ');
