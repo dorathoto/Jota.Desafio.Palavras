@@ -4,7 +4,7 @@ internal class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Digite uma série de palavras separadas por espaço:");
-        string frase = Console.ReadLine();
+        string frase = Console.ReadLine().ToLower();
 
         string[] palavras = frase.Split(' ');
         string palavraMaiorPontuacao = "";
