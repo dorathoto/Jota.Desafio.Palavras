@@ -46,10 +46,8 @@ internal class Program
         // Treinar o modelo
         var model = pipeline.Fit(trainData);
 
-        // Criar um mecanismo de previsão
         var predictionEngine = mlContext.Model.CreatePredictionEngine<DataSet, WordScorePrediction>(model);
 
-        // Prever a pontuação de uma nova palavra
         var newWord = new DataSet { Letras = new[] { 9f, 12f, 1f, 7f, 15f } }; // "idade"
         var prediction = predictionEngine.Predict(newWord);
         Console.WriteLine($"Pontuação prevista para 'idade': {prediction.Score}");
