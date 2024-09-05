@@ -1,3 +1,4 @@
+
 👨🏻‍💻 Bom, vamos lá, vou lançar meu desafio aqui, acredito que até (domingo 08-09-24) é uma boa data para entrega: 
 
 ✅ Desafio Jotinha 🤷🏻
@@ -49,21 +50,23 @@ Depois utilizo outra lista para verificar se ele chegou ao resultado, se tirar 1
 Treinamento:
 "O Rato roeu a roupa do rei de roma"
 
-  roupa: 71 pontos
-  roeu: 59 pontos
-  rato: 54 pontos
-  roma: 47 pontos
-  rei: 32 pontos
-  do: 19 pontos
-  o: 15 pontos
-  de: 9 pontos
-  a: 1 pontos
+    roupa: 71 pontos
+    roeu: 59 pontos
+    rato: 54 pontos
+    roma: 47 pontos
+    rei: 32 pontos
+    do: 19 pontos
+    o: 15 pontos
+    de: 9 pontos
+    a: 1 pontos
 
 
-OBS: Após algumas tentativas apelei e fui pro Python
-Lá fica um pouco mais fácil de implementar uma rede neural com tensorflow e keras.
+**OBS**: Após algumas tentativas apelei e fui pro Python :P
+Lá fica um pouco mais fácil de implementar uma rede neural com *tensorflow* e *keras*.
 Consegui pontuação usando o mesmo dataset de 22,99998 claro que estava com o overfitting (idade) ao remover ainda sim consigo fácil 27
-Porém o dataset se mostra muito pequeno já que no treinamento tenho um loss de 0.0001 e no teste tenho loss de 4, depois seria gerar um csv com dados de treinamento e claro utilizar no C# para comparação
-Rede neural em python Vs Regressão Linear em C#
+Porém o dataset se mostra muito pequeno já que no treinamento tenho um loss de 0.0001 e no teste tenho loss de 4, depois seria correto gerar um *.csv* com dados de treinamento e claro utilizar no C# para comparação
 
-OBS²: Não consegui ainda implementar o FastTree no C#
+> Rede neural em python Vs Regressão Linear em C#
+> Quase como comparar maçã com notebook
+
+**OBS²:** Não consegui ainda implementar o FastTree no C#
