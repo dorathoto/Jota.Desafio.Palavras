@@ -3,12 +3,12 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Digite uma série de palavras separadas por espaço:");
-        string frase = Console.ReadLine();
+        Console.WriteLine("Digite uma frase, irei calcular a palavra de maior ranking");
+        string frase = Console.ReadLine().ToLower();
 
         string[] palavras = frase.Split(' ');
-        string palavraMaiorPontuacao = "";
-        int maiorPontuacao = 0;
+
+        Dictionary<string, int> ranking = new Dictionary<string, int>();
 
         foreach (string palavra in palavras)
         {
@@ -18,13 +18,13 @@ internal class Program
                 pontuacaoAtual += letra - 'a' + 1;
             }
 
-            if (pontuacaoAtual > maiorPontuacao)
-            {
-                maiorPontuacao = pontuacaoAtual;
-                palavraMaiorPontuacao = palavra;
-            }
+            ranking[palavra] = pontuacaoAtual;
         }
-        Console.WriteLine("Palavra de maior pontuação: " + palavraMaiorPontuacao);
-        Console.WriteLine("Pontuação: " + maiorPontuacao);
+
+        var palavrasOrdenadas = ranking.OrderByDescending(pair => pair.Value);
+        foreach (var item in palavrasOrdenadas)
+        {
+            Console.WriteLine($"{item.Key}: {item.Value} pontos");
+        }
     }
 }
