@@ -5,9 +5,9 @@ internal class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Digite uma frase, irei calcular a palavra de maior ranking:");
-        string input = Console.ReadLine();
+        string frase = Console.ReadLine();
 
-        string[] palavras = input.Split(' ');
+        string[] palavras = frase.Split(' ');
 
         var resultado = palavras
             .Select(palavra => new { Palavra = palavra, Pontuacao = palavra.Sum(letra => letra - 'a' + 1) })
