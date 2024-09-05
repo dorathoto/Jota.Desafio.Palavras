@@ -31,17 +31,18 @@ verde,: 2 pontos
 
 
 
-**stage**
+## stage
 Versão básica, eficaz utilizando um loop, já que cada letra é sequencial seus pontos, logo basta fazer o loop para descobrir a pontuação.
 Utilizando 2 variáveis secundárias para armazenar a maior pontuação e a palavra (poderia ser um dicionário)
 Total de Linhas +- 30
 
-**Ranking**
+## Ranking
 Mesma coisa da versão **stage** porém ele mostra todas as palavras e suas pontuações, criei para poder fazer a lista do MachineLearning**
 Total de Linhas +- 30
 
-**Linq**
+## Linq
 Nesse branch fiz utilizando o Linq para calcular a palavra, com desempate
+Total de Linhas +- 21
 
 **MachineLearning**
 Aqui não faço o algoritmo, faço apenas o ranking de algumas palavras e suas pontuações e tento fazer o computador descobrir como chegar a essa pontuação por palavra
