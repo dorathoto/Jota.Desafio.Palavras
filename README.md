@@ -22,3 +22,8 @@ Fiz várias versões, cada uma em um branch diferente
 
 **master**
 Versão básica, eficaz utilizando um loop, já que cada letra é sequencial seus pontos, logo basta fazer o loop para descobrir a pontuação.
+Utilizando 2 variáveis secundárias para armazenar a maior pontuação e a palavra (poderia ser um dicionário)
+
+
+**Linq**
+Nesse branch fiz utilizando o Linq para calcular a palavra
