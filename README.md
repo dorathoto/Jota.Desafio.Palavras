@@ -17,8 +17,12 @@ Todas as letras serão minúsculas e todas as entradas serão válidas.
 📅 Vamo que vamo, quero ver as tecnicas utilizadas, vou fazer a minha e depois discutimos as soluções.
 
 
---------a
+---------
+
 Fiz várias versões, cada uma em um branch diferente
+--------
+
+
 
 OBS: Bug em todas as versões, como utilizo a mesma resolução do desafio nilton (usar o Char para saber a pontuação da palavra) logo uma frase assim 'verde, amarelo' não existe a palavra verde e sim 'verde,'
 verde: 54 pontos
